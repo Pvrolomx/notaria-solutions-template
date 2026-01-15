@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --notaria-navy: #1a365d;
+  --notaria-gold: #d4a84b;
+  --notaria-cream: #faf9f7;
+  --notaria-dark: #0f172a;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: var(--notaria-cream);
+  color: var(--notaria-dark);
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-gradient {
+  background: linear-gradient(135deg, var(--notaria-navy) 0%, #2d4a7c 100%);
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--notaria-gold);
+  box-shadow: 0 0 0 3px rgba(212, 168, 75, 0.1);
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #4b5563;
+}
+
+.btn-primary {
+  padding: 14px 32px;
+  background: var(--notaria-gold);
+  color: var(--notaria-dark);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #c49a3d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 168, 75, 0.3);
+}
+
+.btn-secondary {
+  padding: 14px 32px;
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: var(--notaria-navy);
+}
+
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  border-left: 4px solid var(--notaria-gold);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+}
+
+.lang-toggle {
+  display: flex;
+  gap: 4px;
+  background: rgba(255,255,255,0.1);
+  padding: 4px;
+  border-radius: 20px;
+}
+
+.lang-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  background: transparent;
+  color: white;
+}
+
+.lang-btn.active {
+  background: var(--notaria-gold);
+  color: var(--notaria-dark);
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.install-btn {
+  padding: 8px 16px;
+  background: var(--notaria-gold);
+  color: var(--notaria-dark);
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
